@@ -20,7 +20,7 @@ public class CartViewModel {
 	
 	
 		public static CartViewModel getInstance() {
-			System.out.println(" Cart View Model Get Instance ");
+			//System.out.println(" Cart View Model Get Instance ");
 			if( CartViewModel.instance == null ) {
 				CartViewModel.instance = new CartViewModel();
 			}
@@ -39,7 +39,7 @@ public class CartViewModel {
 		private CartViewModel(){
 			super();
 			
-			System.out.println(" Cart View Model Constructor ");
+			//System.out.println(" Cart View Model Constructor ");
 			
 			// on n'est pas connecté par défaut
 			this.connected 	= false;
@@ -86,7 +86,7 @@ public class CartViewModel {
 			
 			bdd.close();
 			
-			System.out.println(" Cart Model get " + results);
+			//System.out.println(" Cart Model get " + results);
 			
 			return results;
 		}

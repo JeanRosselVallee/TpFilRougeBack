@@ -35,7 +35,7 @@ public class CartModel {
 	
 	
 		public static CartModel getInstance() {
-			System.out.println(" Cart Model Get Instance ");
+			//System.out.println(" Cart Model Get Instance ");
 			if( CartModel.instance == null ) {
 				CartModel.instance = new CartModel();
 			}
@@ -54,7 +54,7 @@ public class CartModel {
 		private CartModel(){
 			super();
 			
-			System.out.println(" Cart Model Constructor ");
+			//System.out.println(" Cart Model Constructor ");
 			
 			// on n'est pas connecté par défaut
 			this.connected 	= false;
@@ -78,7 +78,7 @@ public class CartModel {
 		}
 		
 		public boolean isConnected() {
-			System.out.println(" Cart Model Is Connected ");
+			//System.out.println(" Cart Model Is Connected ");
 			return this.connected;
 		}
 		/***********************************************/
@@ -88,7 +88,7 @@ public class CartModel {
 		
 		public ArrayList<Cart> getCart(){
 			
-			System.out.println(" Cart Model get ");
+			//System.out.println(" Cart Model get ");
 			//on crée un tableau de produits vide
 			ArrayList<Cart> results = new ArrayList<Cart>();
 			
@@ -101,7 +101,7 @@ public class CartModel {
 			
 			bdd.close();
 			
-			System.out.println(" Cart Model get " + results);
+			//System.out.println(" Cart Model get " + results);
 			
 			return results;
 		}

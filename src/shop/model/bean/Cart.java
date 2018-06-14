@@ -12,7 +12,7 @@ public class Cart {
 	public Cart( ){
 		super();
 
-		System.out.println(" Model Bean Cart Constructor ");
+		//System.out.println(" Model Bean Cart Constructor ");
 	}
 
 	public Cart( 
@@ -22,7 +22,7 @@ public class Cart {
 		this.id=p_id;
 		this.productid=p_Product_id;
 		
-		System.out.println(" Model Bean Cart Constructor w/ arguments");
+		//System.out.println(" Model Bean Cart Constructor w/ arguments");
 	}
 	
 	

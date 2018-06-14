@@ -64,7 +64,7 @@ public class CartController extends HttpServlet {
 	) throws ServletException, IOException {
 		
 		long cartId= 0;  
-		System.out.println(" Cart Controller doPost ");
+		//System.out.println(" Cart Controller doPost ");
 		
 		p_response.setHeader("Access-Control-Allow-Origin", "*");
 		p_response.setCharacterEncoding("utf-8");
@@ -98,7 +98,7 @@ public class CartController extends HttpServlet {
 			throws ServletException, IOException {
 
 
-		System.out.println(" Cart Controller doOptions ");
+		//System.out.println(" Cart Controller doOptions ");
 		
 		p_response.setHeader("Access-Control-Allow-Origin", "*");
 		p_response.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -116,21 +116,21 @@ public class CartController extends HttpServlet {
 	) throws ServletException, IOException {
 		
 
-		System.out.println(" Cart Controller doDelete ");
+		//System.out.println(" Cart Controller doDelete ");
 		
 		p_response.setHeader("Access-Control-Allow-Origin", "*");
 		p_response.setCharacterEncoding("utf-8");
 
 		boolean success = false;
-		System.out.println("id=" + p_request.getParameter("id"));
-		System.out.println("api=" + p_request.getParameter("api") );
+		//System.out.println("id=" + p_request.getParameter("id"));
+		//System.out.println("api=" + p_request.getParameter("api") );
 		if (p_request.getParameter("id") != null && p_request.getParameter("api") != null) {
-			System.out.println(" not null params ");
+			//System.out.println(" not null params ");
 			long id = Integer.parseInt(p_request.getParameter("id"));
 			String apiKey = p_request.getParameter("api");
 
 			if (apiKey.equals("azerty123")) {
-				System.out.println(" apiKey OK");
+				//System.out.println(" apiKey OK");
 
 				success = CartModel.getInstance().removeProductById(id);
 
