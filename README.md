@@ -13,8 +13,12 @@ Context: Before this implementaton, the existing application only offers a Catal
 Solution: 
 - MVC pattern 
 - send results to the View (Front-Side) via Json files
-- access the Model (database) via Hibernate  
+    - file CartView.jsp
 - the services offered by the Controller are coded in Java
+    - file CartController
+- access the Model (database) via Hibernate  
+    - files CartModel.java, Cart.java and Cart.hbm.xml for the table cart
+    - files CartViewModel.java, CartView.java and ViewCartProducts.hbm.xml for the view cartView
 
 Data Model:
 - A new table "cart" contains the references of the products in the cart. 
