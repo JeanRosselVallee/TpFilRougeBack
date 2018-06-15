@@ -10,6 +10,9 @@ Goal: Complete an e-Shop application by implementing a Cart with 3 features
 
 Context: Before this implementaton, the existing application only offers a Catalog with similar features.
 
+Solution's choice:
+The creation of a view in the database in order to obtain a detailed list of the elements in the cart obeys to the MVC principle. This solution was preferred to the implementation of this feature in the Front-End. Because a view of the jointure of tables Product and Cart in the Data Model follows the MVC principle where the organisation of data should be kept separate from the View in the Fron-End. This preferred MVC choice will ensure the persistance and the consistency of the data which is taken into charge by the database. While the discarded choice of data being handled by the Front-End or View keeps the data in a volatile state with the risk of data inconsistency and loss. 
+
 Solution: 
 - MVC pattern 
 - send results to the View (Front-Side) via Json files
